@@ -52,6 +52,7 @@ body {
   background-color: var(--background);
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
+  font-style: normal;
 }
 
 /* все про хедер */
@@ -63,7 +64,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
 }
 
 .logo-part {
@@ -76,7 +77,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
+  cursor: pointer;
 }
 
 .site-nav .link:hover,
@@ -94,7 +96,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
+  cursor: pointer;
 }
 
 .contacts .item:hover,
@@ -111,7 +114,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   text-transform: uppercase;
 }
 .hero .order {
@@ -120,7 +123,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
 }
 
 /* ценности */
@@ -129,7 +132,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   text-transform: uppercase;
   text-align: left;
 }
@@ -138,7 +141,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   text-align: left;
 }
 
@@ -152,7 +155,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
 }
 
 /* наша команда */
@@ -162,17 +165,41 @@ body {
 
 .team .name {
   color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03;
 }
 
 .team .title {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03;
+}
+
+.team .position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03;
 }
 
 /* мэйн на портфолио */
 /* фильтр */
+.button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03;
+}
+
 .button .item {
   background-color: var(--background-filter);
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .button .item:hover,
@@ -184,6 +211,17 @@ body {
 /* продукция */
 .production .name {
   color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06;
+}
+
+.production .category {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03;
 }
 
 /* все про футтер */
@@ -201,6 +239,12 @@ body {
 }
 
 /* адресс */
+.address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03;
+}
 .address .office {
   color: var(--footer-logo-second-part);
 }
