@@ -1,0 +1,84 @@
+/* основной цвет текста  #757575 */
+/* вторичный цвет текста  #212121*/
+/* акцент + первая часть лого #2196F3 */
+/* вторая часть лого в хедере #000000 */
+/* белый + вторая часть лого в футтере #FFFFFF */
+/* контакты в футере rgba(255, 255, 255, .6) */
+/* бєкграунд в герое #2F303A */
+/* бєкгаунд "наша команда" + кнопки фильтра #F5F4FA */
+/* бэкгаунд #E5E5E5 */
+:root {
+  --primery-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-first-part: #2196f3;
+  --header-logo-second-part: #000000;
+  --backgound-header: #ffffff;
+  --backgound-hero: #2f303a;
+  --background-team: #2f303a;
+  --background: #e5e5e5;
+  --footer-logo-second-part: #ffffff;
+  --footer-contscts: rgba(255, 255, 255, 0.6);
+  --filter: #f5f4fa;
+}
+
+/* перенести потом в файл нормалайз.сиэсэс- начало */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: none;
+}
+/* перенести потом в файл нормалайз.сиэсэс- конец */
+
+/* общее */
+body {
+  background-color: var(--background);
+  color: var(--primery-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+/* все про хедер */
+.logo-header {
+  color: var(--header-logo-second-part);
+  font-family: Raleway, sans-serif;
+}
+
+.logo-part {
+  color: var(--logo-first-part);
+}
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* все про футтер */
+
+/* мэйн на студии */
+
+/* мэйн на портфолио */
+
+/* скрыть заголовки, которых нет на макете */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
