@@ -1,3 +1,13 @@
+/* Структура:
+рут
+нормалайз
+общее
+хеадер
+мэйн на студии
+мэйн на портфолио
+футтер
+скрыть заголовки*/
+
 /* основной цвет текста  #757575 */
 /* вторичный цвет текста  #212121*/
 /* акцент + первая часть лого #2196F3 */
@@ -6,20 +16,21 @@
 /* контакты в футере rgba(255, 255, 255, .6) */
 /* бєкграунд в герое #2F303A */
 /* бєкгаунд "наша команда" + кнопки фильтра #F5F4FA */
-/* бэкгаунд #E5E5E5 */
+/* бэкгаунд #ffffff */
 :root {
   --primery-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-secondary-color: #ffffff;
   --logo-first-part: #2196f3;
   --header-logo-second-part: #000000;
-  --backgound-header: #ffffff;
-  --backgound-hero: #2f303a;
-  --background-team: #2f303a;
-  --background: #e5e5e5;
+  --background: #ffffff;
+  --background-hero: #2f303a;
+  --background-team: #f5f4fa;
+  --backgound-footer: #2f303a;
   --footer-logo-second-part: #ffffff;
   --footer-contscts: rgba(255, 255, 255, 0.6);
-  --filter: #f5f4fa;
+  --background-filter: #f5f4fa;
 }
 
 /* перенести потом в файл нормалайз.сиэсэс- начало */
@@ -44,6 +55,7 @@ body {
 }
 
 /* все про хедер */
+/* лого */
 .logo-header {
   color: var(--header-logo-second-part);
   font-family: Raleway, sans-serif;
@@ -53,6 +65,7 @@ body {
   color: var(--logo-first-part);
 }
 
+/* навигация */
 .site-nav .link {
   color: var(--secondary-text-color);
 }
@@ -62,11 +75,99 @@ body {
   color: var(--accent-color);
 }
 
-/* все про футтер */
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* контакты */
+.contacts .item {
+  color: var(--primery-text-color);
+}
+
+.contacts .item:hover,
+.contacts .item:focus {
+  color: var(--accent-color);
+}
 
 /* мэйн на студии */
+/* герой */
+
+.hero .name {
+  background-color: var(--background-hero);
+  color: var(--accent-secondary-color);
+}
+.hero .order {
+  background-color: var(--accent-color);
+  color: var(--accent-secondary-color);
+}
+
+/* ценности */
+.values .name {
+  color: var(--secondary-text-color);
+}
+
+/* чем мы занимаемся */
+.works .title {
+  color: var(--secondary-text-color);
+}
+
+.works .title {
+  color: var(--secondary-text-color);
+}
+
+/* наша команда */
+.team {
+  background-color: var(--background-team);
+}
+
+.team .name {
+  color: var(--secondary-text-color);
+}
+
+.team .title {
+  color: var(--secondary-text-color);
+}
 
 /* мэйн на портфолио */
+/* фильтр */
+.button .item {
+  background-color: var(--background-filter);
+  color: var(--secondary-text-color);
+}
+
+.button .item:hover,
+.button .item:focus {
+  background-color: var(--accent-color);
+  color: var(--accent-secondary-color);
+}
+
+/* продукция */
+.production .name {
+  color: var(--secondary-text-color);
+}
+
+/* все про футтер */
+.footer {
+  background-color: var(--backgound-footer);
+}
+/* лого */
+.logo-footer {
+  color: var(--footer-logo-second-part);
+  font-family: Raleway, sans-serif;
+}
+
+.logo-part {
+  color: var(--logo-first-part);
+}
+
+/* адресс */
+.address .office {
+  color: var(--footer-logo-second-part);
+}
+
+.address .item {
+  color: var(--footer-contscts);
+}
 
 /* скрыть заголовки, которых нет на макете */
 .visually-hidden {
