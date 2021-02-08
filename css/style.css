@@ -188,18 +188,15 @@ body {
 
 /* мэйн на портфолио */
 /* фильтр */
-.button {
+.button .item {
+  background-color: var(--background-filter);
+  color: var(--secondary-text-color);
+  cursor: pointer;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03;
-}
-
-.button .item {
-  background-color: var(--background-filter);
-  color: var(--secondary-text-color);
-  cursor: pointer;
 }
 
 .button .item:hover,
